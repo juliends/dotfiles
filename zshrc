@@ -49,3 +49,4 @@ alias rs='rails server'
 alias rc='rails c'
 alias checkpoint='git add . && git commit -m ok && git push origin master'
 alias gprunesquashmerged='git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
+alias myr="myriad $@"
