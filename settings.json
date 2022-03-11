@@ -73,8 +73,9 @@
     "python.formatting.provider": "yapf",
     "ruby.lint":
     {
-        "rubocop": true
+        "rubocop": false
     },
     "workbench.startupEditor": "newUntitledFile",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Monokai"
 }

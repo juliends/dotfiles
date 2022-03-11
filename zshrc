@@ -12,6 +12,9 @@ export HOMEBREW_NO_ANALYTICS=1
 # Disable warning about insecure completion-dependent directories
 ZSH_DISABLE_COMPFIX=true
 
+# ZSH completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
