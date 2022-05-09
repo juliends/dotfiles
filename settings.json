@@ -77,5 +77,5 @@
     },
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Solarized Light"
 }
