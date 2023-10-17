@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir sublime common-aliases zsh-syntax-highlighting history-substring-search pyenv)
+plugins=(git gitfast last-working-dir sublime common-aliases zsh-syntax-highlighting history-substring-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -48,9 +48,10 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export DISABLE_SPRING=1
 
-alias wds='nvm use && webpack-dev-server'
 alias rs='rails server'
 alias rc='rails c'
+alias yb='yarn build --watch'
+alias wds='nvm use && webpack-dev-server'
 alias checkpoint='git add . && git commit -m ok && git push origin master'
 alias gprunesquashmerged='git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done'
 alias myr="myriad $@"
