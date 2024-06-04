@@ -48,8 +48,8 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = julien@lewagon.org
-	name = juliends
+	email = julien.da.silva@hotmail.com
+	name = Julien Da Silva
 [pull]
 	rebase = false
 [init]
